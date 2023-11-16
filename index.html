@@ -1,228 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .table_title {
-        font-size: 14px;
-        font-weight: 600;
-        font-family: Inter;
-        color: #121212;
-        text-align: left;
-        padding: 16px 0;
-        border-top: 1px solid #eef0f0;
-      }
-      .table_content {
-        font-size: 12px;
-        font-weight: 400;
-        font-family: Inter;
-        color: #000000;
-        text-align: left;
-        padding: 8px 0;
-        border-top: 1px solid #eef0f0;
-        border-bottom: 1px solid #eef0f0;
-      }
-      .text_sum {
-        font-size: 12px;
-        font-weight: 600;
-        font-family: Inter;
-        color: #000000;
-        text-align: left;
-        padding: 8px 0;
-        border-bottom: 1px solid #eef0f0;
-      }
-    </style>
-  </head>
 
-  <body style="margin: 0; padding: 40px; max-width: 1000px; margin: 0 auto">
-    <div
-      style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 76px;
-      "
-    >
-      <div
-        style="border: 1px solid #b0bec5; border-radius: 8px; padding: 8px 24px"
-      >
-        <span
-          style="
-            color: #000;
-            font-size: 16px;
-            font-family: Inter;
-            font-weight: 600;
-            height: 44px;
-            min-height: 44px;
-          "
-          >Laporan Pembayaran</span
-        >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .font {
+      font-family: Inter;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: block; margin: 0 auto; width: 695px; border: 1px solid black;">
+    <div style="background-color: white; padding: 24px 24px 0 24px; width: 100%; height: 100px;">
+      <div style="width: 50%; float: left; margin-right: 2%;">
+        <img src="./logo-supplies.png" width="200px" height="auto" alt="supplies">
       </div>
-      <img src="./logo-majoo.png" alt="majoo" />
-    </div>
-    <div
-      style="
-        display: flex;
-        gap: 300px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #eef0f0;
-      "
-    >
-      <div style="max-width: max-content">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            margin-bottom: 10px;
-          "
-        >
-          <img src="./logo.png" alt="merchant" />
-          <div>
-            <span
-              style="
-                color: #000;
-                font-size: 16px;
-                font-family: Inter;
-                font-weight: 600;
-                height: 44px;
-                min-height: 44px;
-              "
-              >Bara Coffeshop</span
-            >
-          </div>
-        </div>
-        <div
-          style="
-            max-width: 280px;
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-          "
-        >
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >Jl. Majoo Gg.1 RT.02 RW.01 Majoo, Jakarta</span
-          >
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >0817263531</span
-          >
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >majoo@majoo.com</span
-          >
-        </div>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 6px">
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Nama Pembayaran
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: Gaji September 2022 Part 2</span
-          >
-        </div>
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Tipe Pembayaran
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: Pembayaran Gaji</span
-          >
-        </div>
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Tanggal Transaksi
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: 28 September 2022</span
-          >
-        </div>
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Penerima
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: 5 Karyawan</span
-          >
+      <div style="float: right; text-align: right; margin-top: 10px;">
+        <img src="./invoice-wording.svg" width="80px" height="auto" alt="wording-supplies">
+        <div class="">
+          <span class="font"
+            style="font-weight: 400; font-size: 12px; color: #263238; margin-top: 4px;">INV/NEW/202112/01778</span>
         </div>
       </div>
     </div>
-    <div style="margin-top: 40px">
-      <table style="width: 100%; border-collapse: collapse">
+
+    <div style="position: relative; left: 24px; top: -15px;">
+      <table style="width: 100%;">
         <tr>
-          <th class="table_title">NIK</th>
-          <th class="table_title">Nama Karyawan</th>
-          <th class="table_title">Outlet</th>
-          <th class="table_title">Posisi</th>
-          <th class="table_title">Gaji Pokok</th>
-          <th class="table_title">Pendapatan</th>
-          <th class="table_title">Potongan</th>
-          <th class="table_title">Gaji Bersih</th>
-        </tr>
-        <tr>
-          <td class="table_content">356218</td>
-          <td class="table_content">Alea Dhara</td>
-          <td class="table_content">Barakopi Jakarta</td>
-          <td class="table_content">Manager</td>
-          <td class="table_content">Rp 8.000.000</td>
-          <td class="table_content">Rp 1.500.000</td>
-          <td class="table_content">Rp 500.000</td>
-          <td class="table_content">Rp 9.000.000</td>
-        </tr>
-        <tr>
-          <td class="table_content">356218</td>
-          <td class="table_content">Alea Dhara</td>
-          <td class="table_content">Barakopi Jakarta</td>
-          <td class="table_content">Manager</td>
-          <td class="table_content">Rp 8.000.000</td>
-          <td class="table_content">Rp 1.500.000</td>
-          <td class="table_content">Rp 500.000</td>
-          <td class="table_content">Rp 9.000.000</td>
-        </tr>
-        <tr>
-          <td class="text_sum" colspan="4">TOTAL</td>
-          <td class="text_sum">Rp 30.500.000</td>
-          <td class="text_sum">Rp 30.500.000</td>
-          <td class="text_sum">Rp 30.500.000</td>
-          <td class="text_sum">Rp 30.500.000</td>
+          <td style="vertical-align: top; width: 50%;">
+            <div>
+              <span class="font" style="font-weight: 400; font-size: 13px; line-height: 16px; color: #47BAB3;">
+                PUBLISHED ON BEHALF OF</span>
+            </div>
+            <div style="margin-bottom: 8px;">
+              <span class="font" style="font-weight: 800; font-size: 13px; line-height: 16px; color: #47BAB3;">
+                PT. Majoo Teknologi Indonesia</span>
+            </div>
+            <div style="display: block;">
+              <span style="font-size: 11px;" class="font">
+                Publish Date <span style="margin-left: 20px; font-size: 11px;" class="font">
+                  : 09 Januari 2022
+                </span>
+              </span>
+            </div>
+            <div style="display: block;">
+              <span style="font-size: 11px;" class="font">
+                Due Date <span style="margin-left: 37px; font-size: 11px;" class="font">
+                  : 09 Januari 2022
+                </span>
+              </span>
+            </div>
+          </td>
+          <td style="width: 50%;">
+            <span class="font" style="font-size: 13px;">TO</span>
+            <table style="margin-top: 27.5px; padding: 2px;">
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td style="padding-top: 5px; width: 80px; font-size: 11px;" class="font">Name</td>
+                <td style="padding-top: 5px; font-size: 11px;" class="font">: PT. Bangor Berkembang Abadi</td>
+              </tr>
+              <tr>
+                <td style="padding-top: 5px; vertical-align: top; width: 80px; font-size: 11px;" class="font">Address
+                </td>
+                <td style="padding-top: 5px; font-size: 11px; width: 200px;" class="font">: Kebumen, KEBUMEN, KABUPATEN
+                  KEBUMEN, Jawa Tengah</td>
+              </tr>
+              <tr>
+                <td style="padding-top: 5px; width: 80px; font-size: 11px;" class="font">Outlet</td>
+                <td style="padding-top: 5px; font-size: 11px;" class="font">: Burger Bangor Kebumen</td>
+              </tr>
+              <tr>
+                <td style="padding-top: 5px; width: 80px; font-size: 11px;" class="font">Contact</td>
+                <td style="padding-top: 5px; font-size: 11px;" class="font">: 081336707967</td>
+              </tr>
+              <tr>
+                <td style="padding-top: 5px; width: 80px; font-size: 11px;" class="font">Email</td>
+                <td style="padding-top: 5px; font-size: 11px;" class="font">: burgerbangor@gmail.com</td>
+              </tr>
+            </table>
+          </td>
         </tr>
       </table>
     </div>
-  </body>
+    <div style="padding: 20px 24px 24px 24px;">
+      <table style="border-collapse: collapse; width: 100%;">
+        <tr>
+          <th class="font"
+            style="border: 2px solid #47BAB3;border-left: 0; text-align: left; padding: 10px 12px;font-size: 9px;color: #263238;">
+            NO.</th>
+          <th class="font"
+            style="border: 2px solid #47BAB3; text-align: left; padding: 10px 12px;font-size: 9px;color: #263238;">CODE
+          </th>
+          <th class="font"
+            style="border: 2px solid #47BAB3; text-align: left; padding: 10px 12px;font-size: 9px;color: #263238;">
+            PRODUCT NAME</th>
+          <th class="font"
+            style="border: 2px solid #47BAB3; text-align: right; padding: 10px 12px;font-size: 9px;color: #263238;">QTY
+          </th>
+          <th class="font"
+            style="border: 2px solid #47BAB3;text-align: right; padding: 10px 12px;font-size: 9px;color: #263238;">PRICE
+          </th>
+          <th class="font"
+            style="border: 2px solid #47BAB3;text-align: right; padding: 10px 12px;font-size: 9px;color: #263238;">
+            DISCOUNT</th>
+          <th class="font"
+            style="border: 2px solid #47BAB3;border-right: 0; text-align: right; padding: 10px 12px;font-size: 9px;color: #263238;">
+            SUBTOTAL</th>
+        </tr>
+        <!-- this border bottom will appear in the last data -->
+        <tr style="border: none; border-bottom: 2px solid #47BAB3;">
+          <td style="border: none; padding: 10px 12px;"><span class="font"
+              style="font-size: 11px; color: #263238;">1</span></td>
+          <td style="border: none; padding: 10px 12px;"><span class="font"
+              style="font-size: 11px; color: #263238;">BDL123</span></td>
+          <td style="border: none; padding: 10px 12px;"><span class="font"
+              style="font-size: 11px; color: #263238;">Paket
+              Promo - Majoo 123456</span></td>
+          <td style="border: none; padding: 10px 12px; text-align: right;"><span class="font"
+              style="font-size: 11px; color: #263238;">1</span></td>
+          <td style="border: none; padding: 10px 12px; text-align: right;"><span class="font"
+              style="font-size: 11px; color: #263238;">249.000</span></td>
+          <td style="border: none; padding: 10px 12px; text-align: right;"><span class="font"
+              style="font-size: 11px; color: #263238;">0</span></td>
+          <td style="border: none; padding: 10px 12px; text-align: right;"><span class="font"
+              style="font-size: 11px; color: #263238;">2.988.000</span></td>
+        </tr>
+      </table>
+    </div>
+    <div style="padding: 0 24px 24px 24px; width: 100%;">
+      <div>
+        <img width="128px" height="auto" src="./payment-information-wording.svg" alt="payment-information-wording" />
+        <table style="width: 407px;">
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; padding: 9px 0; width: 80px; font-size: 11px;" class="font">Payment Method
+            </td>
+            <td style="padding: 9px 0; width: 80px; font-size: 11px; font-weight: 600;" class="font">: Virtual Account -
+              BCA</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; padding: 9px 0; width: 80px; font-size: 11px;" class="font">Virtual Account
+              Number</td>
+            <td style="padding: 9px 0; width: 80px; font-size: 11px; font-weight: 600;" class="font">:
+              202701391581710230</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; padding: 9px 0; width: 80px; font-size: 11px;" class="font">Due Date Number
+            </td>
+            <td style="padding: 9px 0; width: 80px; font-size: 11px; font-weight: 600;" class="font">: 03/06/2022 10:17
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="margin-top: 10px; float: right;">
+      test</div>
+    </div>
+  </div>
+</body>
+
 </html>
