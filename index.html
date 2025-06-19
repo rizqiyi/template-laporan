@@ -1,228 +1,953 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>e-LIGHT Sentinel - Permintaan Disetujui</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .table_title {
-        font-size: 14px;
-        font-weight: 600;
-        font-family: Inter;
-        color: #121212;
-        text-align: left;
-        padding: 16px 0;
-        border-top: 1px solid #eef0f0;
-      }
-      .table_content {
-        font-size: 12px;
-        font-weight: 400;
-        font-family: Inter;
-        color: #000000;
-        text-align: left;
-        padding: 8px 0;
-        border-top: 1px solid #eef0f0;
-        border-bottom: 1px solid #eef0f0;
-      }
-      .text_sum {
-        font-size: 12px;
-        font-weight: 600;
-        font-family: Inter;
-        color: #000000;
-        text-align: left;
-        padding: 8px 0;
-        border-bottom: 1px solid #eef0f0;
-      }
-    </style>
   </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Manrope;
+      background-color: #f5f5f5;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      style="background-color: #EEEEEE"
+    >
+      <tr>
+        <td align="center" style="padding: 20px 0">
+          <table
+            width="700"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              background-color: #ffffff;
+              border-collapse: collapse;
+              border-radius: 24px;
+              overflow: hidden;
+            "
+          >
+            <!-- Header with Gradient -->
+            <tr>
+              <td
+                style="
+                  background: linear-gradient(180deg, #262626 0%, #767773 100%);
+                  background: -webkit-linear-gradient(
+                    180deg,
+                    #262626 0%,
+                    #767773 100%
+                  );
+                  background: -moz-linear-gradient(
+                    180deg,
+                    #262626 0%,
+                    #767773 100%
+                  );
+                  padding: 20px;
+                  text-align: center;
+                  border-radius: 24px 24px 0 0;
+                "
+              >
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td
+                      style="color: #ffffff; font-size: 18px; font-weight: bold"
+                    >
+                      <img
+                        src="./logo.png"
+                        alt="e-LIGHT Logo"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          border-radius: 4px;
+                          margin-right: 10px;
+                          vertical-align: middle;
+                        "
+                      />
+                      e-LIGHT Sentinel
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-  <body style="margin: 0; padding: 40px; max-width: 1000px; margin: 0 auto">
-    <div
-      style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 76px;
-      "
-    >
-      <div
-        style="border: 1px solid #b0bec5; border-radius: 8px; padding: 8px 24px"
-      >
-        <span
-          style="
-            color: #000;
-            font-size: 16px;
-            font-family: Inter;
-            font-weight: 600;
-            height: 44px;
-            min-height: 44px;
-          "
-          >Laporan Pembayaran</span
-        >
-      </div>
-      <img src="./logo-majoo.png" alt="majoo" />
-    </div>
-    <div
-      style="
-        display: flex;
-        gap: 300px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #eef0f0;
-      "
-    >
-      <div style="max-width: max-content">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            margin-bottom: 10px;
-          "
-        >
-          <img src="./logo.png" alt="merchant" />
-          <div>
-            <span
-              style="
-                color: #000;
-                font-size: 16px;
-                font-family: Inter;
-                font-weight: 600;
-                height: 44px;
-                min-height: 44px;
-              "
-              >Bara Coffeshop</span
-            >
-          </div>
-        </div>
-        <div
-          style="
-            max-width: 280px;
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-          "
-        >
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >Jl. Majoo Gg.1 RT.02 RW.01 Majoo, Jakarta</span
-          >
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >0817263531</span
-          >
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >majoo@majoo.com</span
-          >
-        </div>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 6px">
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Nama Pembayaran
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: Gaji September 2022 Part 2</span
-          >
-        </div>
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Tipe Pembayaran
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: Pembayaran Gaji</span
-          >
-        </div>
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Tanggal Transaksi
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: 28 September 2022</span
-          >
-        </div>
-        <div style="display: flex; align-items: center">
-          <span
-            style="
-              font-weight: 600;
-              color: #272a2a;
-              font-size: 14px;
-              font-family: Inter;
-              width: 160px;
-            "
-            >Penerima
-          </span>
-          <span style="color: #272a2a; font-size: 14px; font-family: Inter"
-            >: 5 Karyawan</span
-          >
-        </div>
-      </div>
-    </div>
-    <div style="margin-top: 40px">
-      <table style="width: 100%; border-collapse: collapse">
-        <tr>
-          <th class="table_title">NIK</th>
-          <th class="table_title">Nama Karyawan</th>
-          <th class="table_title">Outlet</th>
-          <th class="table_title">Posisi</th>
-          <th class="table_title">Gaji Pokok</th>
-          <th class="table_title">Pendapatan</th>
-          <th class="table_title">Potongan</th>
-          <th class="table_title">Gaji Bersih</th>
-        </tr>
-        <tr>
-          <td class="table_content">356218</td>
-          <td class="table_content">Alea Dhara</td>
-          <td class="table_content">Barakopi Jakarta</td>
-          <td class="table_content">Manager</td>
-          <td class="table_content">Rp 8.000.000</td>
-          <td class="table_content">Rp 1.500.000</td>
-          <td class="table_content">Rp 500.000</td>
-          <td class="table_content">Rp 9.000.000</td>
-        </tr>
-        <tr>
-          <td class="table_content">356218</td>
-          <td class="table_content">Alea Dhara</td>
-          <td class="table_content">Barakopi Jakarta</td>
-          <td class="table_content">Manager</td>
-          <td class="table_content">Rp 8.000.000</td>
-          <td class="table_content">Rp 1.500.000</td>
-          <td class="table_content">Rp 500.000</td>
-          <td class="table_content">Rp 9.000.000</td>
-        </tr>
-        <tr>
-          <td class="text_sum" colspan="4">TOTAL</td>
-          <td class="text_sum">Rp 30.500.000</td>
-          <td class="text_sum">Rp 30.500.000</td>
-          <td class="text_sum">Rp 30.500.000</td>
-          <td class="text_sum">Rp 30.500.000</td>
-        </tr>
-      </table>
-    </div>
+            <!-- Green Banner -->
+            <tr>
+              <td
+                style="
+                  background-color: #b1d237;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                <h2
+                  style="
+                    margin: 0;
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: bold;
+                  "
+                >
+                  Permintaan Anda telah disetujui oleh semua Approver
+                </h2>
+              </td>
+            </tr>
+
+            <!-- Content -->
+            <tr>
+              <td style="padding: 32px">
+                <p
+                  style="
+                    margin: 0 0 20px 0;
+                    color: #101820;
+                    font-size: 14px;
+                    line-height: 1.5;
+                  "
+                >
+                  Dear Mellissa Wijaya,
+                </p>
+
+                <p
+                  style="
+                    margin: 0 0 20px 0;
+                    color: #101820;
+                    font-size: 14px;
+                    line-height: 1.5;
+                  "
+                >
+                  Permintaan Anda
+                  <b>telah disetujui oleh semua Approver</b>, dengan detail
+                  sebagai berikut:
+                </p>
+
+                <!-- Request Details Table (No Lines) -->
+                <table
+                  width="100%"
+                  cellpadding="8"
+                  cellspacing="0"
+                  style="margin-bottom: 30px; border-collapse: collapse"
+                >
+                  <tr>
+                    <td
+                      style="
+                        color: #101820;
+                        font-size: 14px;
+                        padding: 5px 0;
+                        width: 130px;
+                      "
+                    >
+                      Nama Pemohon
+                    </td>
+                    <td
+                      style="
+                        color: #101820;
+                        font-size: 14px;
+                        padding: 5px 0;
+                        width: 30px;
+                      "
+                    >
+                      :
+                    </td>
+                    <td
+                      style="
+                        color: #101820;
+                        font-size: 14px;
+                        padding: 5px 0;
+                        font-weight: 500;
+                      "
+                    >
+                      Mellissa Wijaya
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="color: #101820; font-size: 14px; padding: 8px 0">
+                      Divisi
+                    </td>
+                    <td style="color: #101820; font-size: 14px; padding: 8px 0">
+                      :
+                    </td>
+                    <td
+                      style="
+                        color: #101820;
+                        font-size: 14px;
+                        padding: 8px 0;
+                        font-weight: 500;
+                      "
+                    >
+                      Marketing
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="color: #101820; font-size: 14px; padding: 8px 0">
+                      Jenis Permintaan
+                    </td>
+                    <td style="color: #101820; font-size: 14px; padding: 8px 0">
+                      :
+                    </td>
+                    <td
+                      style="
+                        color: #101820;
+                        font-size: 14px;
+                        padding: 8px 0;
+                        font-weight: 500;
+                      "
+                    >
+                      Pembelian Assets
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="color: #101820; font-size: 14px; padding: 8px 0">
+                      Tgl. Permintaan
+                    </td>
+                    <td style="color: #101820; font-size: 14px; padding: 8px 0">
+                      :
+                    </td>
+                    <td
+                      style="
+                        color: #101820;
+                        font-size: 14px;
+                        padding: 8px 0;
+                        font-weight: 500;
+                      "
+                    >
+                      08 Jan 2024 - 10:30
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Items Section with Grouping Card -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="
+                    background-color: #e5e5e5;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <tr>
+                    <td style="padding: 8px; text-align: center">
+                      <h3
+                        style="
+                          margin: 0;
+                          color: #101820;
+                          font-size: 13px;
+                          font-weight: bold;
+                        "
+                      >
+                        Barang yang disetujui
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- Item 1 -->
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="
+                          background-color: #ffffff;
+                          border: 1px solid #e5e5e5;
+                          border-collapse: separate;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 16px 60px">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td
+                                  style="
+                                    color: #4b4d56;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    vertical-align: top;
+                                    padding-right: 12px;
+                                  "
+                                >
+                                  <div
+                                    style="
+                                      width: 24px;
+                                      height: 24px;
+                                      border-radius: 100%;
+                                      background: #e5e5e5;
+                                    "
+                                  >
+                                    <div
+                                      style="
+                                        text-align: center;
+                                        margin-top: 3px;
+                                        padding-top: 3px;
+                                      "
+                                    >
+                                      1
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <table
+                                    width="100%"
+                                    cellpadding="3"
+                                    cellspacing="0"
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          width: 130px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        No Permintaan
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                          width: 30px;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        PO/080124-001
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Nama Barang
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Macbook Pro M1 Max
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Kuantitas
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        1
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Total
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          font-weight: bold;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Rp 18.000.000,63
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Tgl. Dibutuhkan
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        12 Jan 2024
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Lokasi Pengiriman
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Lighthouse Lotte Shopping Avenue
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Catatan Approver 1
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Mohon segera di proses
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Catatan Approver 2
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Pastikan semua barang tidak lecet saat
+                                        sampai
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Item 2 -->
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="
+                          background-color: #ffffff;
+                          border: 1px solid #e5e5e5;
+                          border-top: none;
+                          border-radius: 0 0 8px 8px;
+                          border-collapse: separate;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 16px 60px">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td
+                                  style="
+                                    color: #4b4d56;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    vertical-align: top;
+                                    padding-right: 12px;
+                                  "
+                                >
+                                  <div
+                                    style="
+                                      width: 24px;
+                                      height: 24px;
+                                      border-radius: 100%;
+                                      background: #e5e5e5;
+                                    "
+                                  >
+                                    <div
+                                      style="
+                                        text-align: center;
+                                        margin-top: 3px;
+                                        padding-top: 3px;
+                                      "
+                                    >
+                                      2
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <table
+                                    width="100%"
+                                    cellpadding="3"
+                                    cellspacing="0"
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          width: 130px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        No Permintaan
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                          width: 30px;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        PO/080124-002
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Nama Barang
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        DELL Inspiron 4230
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Kuantitas
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        1
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Total
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          font-weight: bold;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Rp 18.000.000,63
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Tgl. Dibutuhkan
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        12 Jan 2024
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Lokasi Pengiriman
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Lighthouse Lotte Shopping Avenue
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Catatan Approver 1
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Mohon segera di proses
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Catatan Approver 2
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        :
+                                      </td>
+                                      <td
+                                        style="
+                                          color: #101820;
+                                          font-size: 13px;
+                                          padding: 2px 0;
+                                        "
+                                      >
+                                        Pastikan semua barang tidak lecet saat
+                                        sampai
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- CTA Section -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="
+                    background-color: #f8ffdf;
+                    border-radius: 8px;
+                    margin-bottom: 30px;
+                    border: 1px solid #b1d237;
+                    border-collapse: separate;
+                  "
+                >
+                  <tr>
+                    <td style="padding: 16px; text-align: center">
+                      <p
+                        style="
+                          margin: 0 0 15px 0;
+                          color: #101820;
+                          font-size: 14px;
+                        "
+                      >
+                        Klik tombol di bawah ini untuk melihat detail permintaan
+                        Anda.
+                      </p>
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="margin: 0 auto"
+                      >
+                        <tr>
+                          <td
+                            style="
+                              background: linear-gradient(
+                                177.63deg,
+                                #b1d237 1.99%,
+                                #77971b 131.63%
+                              );
+                              background: -webkit-linear-gradient(
+                                177.63deg,
+                                #b1d237 1.99%,
+                                #77971b 131.63%
+                              );
+                              background: -moz-linear-gradient(
+                                177.63deg,
+                                #b1d237 1.99%,
+                                #77971b 131.63%
+                              );
+                              border-radius: 20px;
+                              padding: 12px 24px;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                color: #ffffff;
+                                text-decoration: none;
+                                font-size: 14px;
+                                font-weight: bold;
+                                display: block;
+                              "
+                            >
+                              Lihat Detail Permintaan
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #F8F8F8; padding: 24px;">
+                <p
+                  style="
+                    margin: 0 0 10px 0;
+                    color: #101820;
+                    font-size: 14px;
+                    line-height: 1.5;
+                  "
+                >
+                  Silakan cek detail status permintaan Anda secara berkala
+                  melalui akun e-LIGHT Anda.
+                </p>
+
+                <p style="margin: 16px 0 5px 0; color: #101820; font-size: 16px">
+                  Cheers,
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    color: #101820;
+                    font-size: 16px;
+                    font-weight: bold;
+                  "
+                >
+                  e-LIGHT Sentinel
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
